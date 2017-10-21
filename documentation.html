@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-center">
+        <div class="content">
+            <div class="title m-b-md">Flexbox Documentation</div>
+
+            <div class="links mb-1">
+                <a href="#flex-axis">Axis</a>
+                <a href="#flex-container">Flex Container</a>
+                <a href="#flex-item">Flex Item</a>
+            </div>
+
+            <div class="intro">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie, dui nec posuere suscipit, mi risus condimentum orci, id tristique augue neque a nunc. Nulla vestibulum mattis ullamcorper. Vestibulum et nibh massa. Vivamus sem augue, convallis sed venenatis a, tincidunt a arcu. Morbi vel volutpat ante, ut sodales ligula. Ut quis consequat sem. Nulla sed porttitor massa. Cras tempus magna ut placerat blandit. Phasellus est mi, vestibulum laoreet auctor a, pretium porttitor magna. Nulla eget accumsan erat, et gravida dui. Mauris dapibus sed purus aliquam blandit. Morbi at malesuada ligula.
+            </div>
+
+            <div class="flex-example mb-05 mt-1">
+                <div class="h4">Initial Code</div>
+                <div class="code-block mb-1">
+<pre class="html"><code>&lt;div class=&quot;flex-container&quot;&gt;
+    &lt;div class=&quot;flex-item item1&quot;&gt;&lt;p&gt;1&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;flex-item item2&quot;&gt;&lt;p&gt;2&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;flex-item item3&quot;&gt;&lt;p&gt;3&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;flex-item item4&quot;&gt;&lt;p&gt;4&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;flex-item item5&quot;&gt;&lt;p&gt;5&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;flex-item item6&quot;&gt;&lt;p&gt;6&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;flex-item item7&quot;&gt;&lt;p&gt;7&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;flex-item item8&quot;&gt;&lt;p&gt;8&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+                <div class="code-block">
+<pre class="css"><code>.flex-container&#123;
+    display: flex;
+&#125;</code></pre>
+                </div>
+            </div>
+
+<hr />
+
+            <div id="flex-axis" class="h2">Axis</div>
+
+<hr />
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie, dui nec posuere suscipit, mi risus condimentum orci, id tristique augue neque a nunc. Nulla vestibulum mattis ullamcorper. Vestibulum et nibh massa. Vivamus sem augue, convallis sed venenatis a, tincidunt a arcu. Morbi vel volutpat ante, ut sodales ligula. Ut quis consequat sem. Nulla sed porttitor massa. Cras tempus magna ut placerat blandit. Phasellus est mi, vestibulum laoreet auctor a, pretium porttitor magna. Nulla eget accumsan erat, et gravida dui. Mauris dapibus sed purus aliquam blandit. Morbi at malesuada ligula.
+            </p>
+
+<hr />
+
+            <div id="flex-container" class="h2">Flex Container</div>
+
+            <div class="links mb-1">
+                <a href="#fc-flex-direction">Flex Direction</a>
+                <a href="#fc-wrap">Wrap</a>
+                <a href="#fc-justify-content">Justify Content</a>
+                <a href="#fc-align-items">Align Items</a>
+                <a href="#fc-align-content">Align Content</a>
+            </div>
+
+<hr />
+
+            <div id="fc-flex-direction" class="h3">Flex Direction</div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in elit at ipsum ullamcorper viverra sit amet vel leo.
+            </p>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Row</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    flex-direction: row;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 fd-row">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Row Reverse</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    flex-direction: row-reverse;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 fd-row-reverse">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Column</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    flex-direction: column;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 fd-column">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Column Reverse</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    flex-direction: column-reverse;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 fd-column-reverse">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                </div>
+            </div>
+
+<hr />
+
+            <div id="fc-wrap" class="h3">Wrap</div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in elit at ipsum ullamcorper viverra sit amet vel leo.
+            </p>
+
+            <div class="flex-example mb-05">
+                <div class="h4">No Wrap</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    flex-wrap: nowrap;
+&#125;
+.flex-item&#123;
+    width: 300px;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-item-width-300 fw-nowrap">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Wrap</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    flex-wrap: wrap;
+&#125;
+.flex-item&#123;
+    width: 300px;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-item-width-300 fw-wrap">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Wrap Reverse</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    flex-wrap: wrap;
+&#125;
+.flex-item&#123;
+    width: 300px;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-item-width-300 fw-wrap-reverse">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+<hr />
+            <div id="fc-justify-content" class="h3">Justify Content</div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in elit at ipsum ullamcorper viverra sit amet vel leo.
+            </p>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Flex Start</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    justify-content: flex-start;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 jc-flex-start">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Flex End</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    justify-content: flex-end;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 jc-flex-end">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Center</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    justify-content: center;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 jc-center">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Space Around</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    justify-content: space-around;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 jc-space-around">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Space Between</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    justify-content: space-between;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 jc-space-between">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+<hr />
+
+            <div id="fc-align-items" class="h3">Align Items</div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in elit at ipsum ullamcorper viverra sit amet vel leo.
+            </p>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Stretch</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    align-items: space-around;
+    height: 200px;
+&#125;
+.flex-item.item1 p&#123;font-size: 2rem;&#125;
+.flex-item.item2 p&#123;font-size: 3rem;&#125;
+.flex-item.item3 p&#123;font-size: 6rem;&#125;
+.flex-item.item4 p&#123;font-size: 5rem;&#125;
+.flex-item.item5 p&#123;font-size: 6rem;&#125;
+.flex-item.item6 p&#123;font-size: 3rem;&#125;
+.flex-item.item7 p&#123;font-size: 2rem;&#125;
+.flex-item.item8 p&#123;font-size: 4rem;&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-cont-height-200 flex-item-font-alt ai-stretch">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Flex Start</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    align-items: flex-start;
+    height: 200px;
+&#125;
+.flex-item.item1 p&#123;font-size: 2rem;&#125;
+.flex-item.item2 p&#123;font-size: 3rem;&#125;
+.flex-item.item3 p&#123;font-size: 6rem;&#125;
+.flex-item.item4 p&#123;font-size: 5rem;&#125;
+.flex-item.item5 p&#123;font-size: 6rem;&#125;
+.flex-item.item6 p&#123;font-size: 3rem;&#125;
+.flex-item.item7 p&#123;font-size: 2rem;&#125;
+.flex-item.item8 p&#123;font-size: 4rem;&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-cont-height-200 flex-item-font-alt ai-flex-start">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Flex End</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    align-items: flex-end;
+    height: 200px;
+&#125;
+.flex-item.item1 p&#123;font-size: 2rem;&#125;
+.flex-item.item2 p&#123;font-size: 3rem;&#125;
+.flex-item.item3 p&#123;font-size: 6rem;&#125;
+.flex-item.item4 p&#123;font-size: 5rem;&#125;
+.flex-item.item5 p&#123;font-size: 6rem;&#125;
+.flex-item.item6 p&#123;font-size: 3rem;&#125;
+.flex-item.item7 p&#123;font-size: 2rem;&#125;
+.flex-item.item8 p&#123;font-size: 4rem;&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-cont-height-200 flex-item-font-alt ai-flex-end">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Center</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    align-items: center;
+    height: 200px;
+&#125;
+.flex-item.item1 p&#123;font-size: 2rem;&#125;
+.flex-item.item2 p&#123;font-size: 3rem;&#125;
+.flex-item.item3 p&#123;font-size: 6rem;&#125;
+.flex-item.item4 p&#123;font-size: 5rem;&#125;
+.flex-item.item5 p&#123;font-size: 6rem;&#125;
+.flex-item.item6 p&#123;font-size: 3rem;&#125;
+.flex-item.item7 p&#123;font-size: 2rem;&#125;
+.flex-item.item8 p&#123;font-size: 4rem;&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-cont-height-200 flex-item-font-alt ai-center">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Baseline</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    align-items: baseline;
+    height: 200px;
+&#125;
+.flex-item.item1 p&#123;font-size: 2rem;&#125;
+.flex-item.item2 p&#123;font-size: 3rem;&#125;
+.flex-item.item3 p&#123;font-size: 6rem;&#125;
+.flex-item.item4 p&#123;font-size: 5rem;&#125;
+.flex-item.item5 p&#123;font-size: 6rem;&#125;
+.flex-item.item6 p&#123;font-size: 3rem;&#125;
+.flex-item.item7 p&#123;font-size: 2rem;&#125;
+.flex-item.item8 p&#123;font-size: 4rem;&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-cont-height-200 flex-item-font-alt ai-baseline">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+<hr />
+
+            <div id="fc-align-content" class="h3">Align Content</div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in elit at ipsum ullamcorper viverra sit amet vel leo.
+            </p>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Stretch</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    align-content: stretch;
+    flex-wrap: wrap;
+    height: 400px;
+&#125;
+.flex-item&#123;
+    width: 300px;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-cont-height-400 fw-wrap flex-item-width-300 ac-stretch">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Flex Start</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    height: 400px;
+&#125;
+.flex-item&#123;
+    width: 300px;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-cont-height-400 fw-wrap flex-item-width-300 ac-flex-start">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Flex End</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    height: 400px;
+&#125;
+.flex-item&#123;
+    width: 300px;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-cont-height-400 fw-wrap flex-item-width-300 ac-flex-end">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Center</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 400px;
+&#125;
+.flex-item&#123;
+    width: 300px;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-cont-height-400 fw-wrap flex-item-width-300 ac-center">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Space Around</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    align-content: space-around;
+    flex-wrap: wrap;
+    height: 400px;
+&#125;
+.flex-item&#123;
+    width: 300px;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-cont-height-400 fw-wrap flex-item-width-300 ac-space-around">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Space Between</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    align-content: space-between;
+    flex-wrap: wrap;
+    height: 400px;
+&#125;
+.flex-item&#123;
+    width: 300px;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-cont-height-400 fw-wrap flex-item-width-300 ac-space-between">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+<hr />
+
+            <div id="flex-item" class="h2">Flex Item</div>
+
+            <div class="links mb-1">
+                <a href="#fi-align-self">Align Self</a>
+                <a href="#fi-order">Order</a>
+                <a href="#fi-flex">Flex</a>
+            </div>
+
+<hr />
+
+            <div id="fi-align-self" class="h3">Align Self</div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in elit at ipsum ullamcorper viverra sit amet vel leo.
+            </p>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Stretch</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    height: 200px;
+&#125;
+.flex-item&#123;
+    align-self: flex-start;
+&#125;
+.flex-item.item4&#123;
+    align-self: stretch;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-cont-height-200">
+                    <div class="flex-item item1 as-flex-start"><p>1</p></div>
+                    <div class="flex-item item2 as-flex-start"><p>2</p></div>
+                    <div class="flex-item item3 as-flex-start"><p>3</p></div>
+                    <div class="flex-item item4 as-stretch"><p>4</p></div>
+                    <div class="flex-item item5 as-flex-start"><p>5</p></div>
+                    <div class="flex-item item6 as-flex-start"><p>6</p></div>
+                    <div class="flex-item item7 as-flex-start"><p>7</p></div>
+                    <div class="flex-item item8 as-flex-start"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Flex Start</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    height: 200px;
+&#125;
+.flex-item.item4&#123;
+    align-self: flex-start;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-cont-height-200">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4 as-flex-start"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Flex End</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    height: 200px;
+&#125;
+.flex-item.item4&#123;
+    align-self: flex-end;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-cont-height-200">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4 as-flex-end"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Center</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    height: 200px;
+&#125;
+.flex-item.item4&#123;
+    align-self: center;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-cont-height-200">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4 as-center"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Baseline</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    height: 200px;
+&#125;
+.flex-item.item4,
+.flex-item.item5,
+.flex-item.item6&#123;
+    align-self: baseline;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-cont-height-200 flex-item-font-alt">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4 as-baseline"><p>4</p></div>
+                    <div class="flex-item item5 as-baseline"><p>5</p></div>
+                    <div class="flex-item item6 as-baseline"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Auto</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    height: 200px;
+&#125;
+.flex-item.item4&#123;
+    align-self: auto;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1 flex-cont-height-200 flex-item-font-alt">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4 as-auto"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+<hr />
+
+            <div id="fi-order" class="h2">Order</div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in elit at ipsum ullamcorper viverra sit amet vel leo.
+            </p>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Order 0</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item.item4&#123;
+    order: 0;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4 bg-red"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Order 1</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item.item4&#123;
+    order: 1;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4 bg-red o-one"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Order -1</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item.item4&#123;
+    order: -1;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4 bg-red o-n-one"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Order 1 & 10</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item.item4&#123;
+    order: 1;
+&#125;
+.flex-item.item2&#123;
+    order: 10;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2 bg-red o-ten"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4 bg-red o-one"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Order -1 & -10</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item.item4&#123;
+    order: -1;
+&#125;
+.flex-item.item2&#123;
+    order: -10;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2 bg-red o-n-ten"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4 bg-red o-n-one"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+            <div class="flex-example mb-05">
+                <div class="h4">Order 1 & -10</div>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item.item4&#123;
+    order: 1;
+&#125;
+.flex-item.item2&#123;
+    order: -10;
+&#125;</code></pre>
+                </div>
+                <div class="flex-container mb-1">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2 bg-red o-n-ten"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4 bg-red o-one"><p>4</p></div>
+                    <div class="flex-item item5"><p>5</p></div>
+                    <div class="flex-item item6"><p>6</p></div>
+                    <div class="flex-item item7"><p>7</p></div>
+                    <div class="flex-item item8"><p>8</p></div>
+                </div>
+            </div>
+
+
+<hr />
+
+            <div id="fi-flex" class="h2">Flex</div>
+
+            <div class="flex-example mb-05">
+                <p>
+                    The 'flex' style consists of 3 properties:
+                </p>
+
+                <div class="links mb-1">
+                    <a href="#fi-f-grow">Flex Grow</a>
+                    <a href="#fi-f-shrink">Flex Shrink</a>
+                    <a href="#fi-f-basis">Flex Basis</a>
+                </div>
+
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item&#123;
+    flex: flex-grow flex-shrink flex-basis;
+    flex:     1          1        100px   ;
+&#125;</code></pre>
+                </div>
+
+                <div class="flex-container mb-1 f-1-1-100">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                </div>
+
+                <br />
+
+                <p>
+                    In this example I have applied [0 grow, 0 shrink, 100px basis].
+                <br />
+                    These means the items will not grow to the container, will not shrink below the item's 'flex-basis' size, and have a default size of 100px;
+                </p>
+
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item&#123;
+    flex: 0 0 100px;
+&#125;</code></pre>
+                </div>
+
+                <div class="flex-container mb-1 f-0-0-100">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                </div>
+
+                <br />
+
+                <p>
+                    In this example I have applied [1 grow, 0 shrink, 100px basis].
+                <br />
+                    These means the items will grow to the container, will not shrink below the item's 'flex-basis' size, and have a default size of 100px;
+                </p>
+
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item&#123;
+    flex: 1 0 100px;
+&#125;</code></pre>
+                </div>
+
+                <div class="flex-container mb-1 f-1-0-100">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                </div>
+
+                <br />
+
+                <p>
+                    In this example I have applied [0 grow, 1 shrink, 100px basis].
+                <br />
+                    These means the items will not grow to the container, will shrink to the container, and have a default size of 100px;
+                </p>
+
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item&#123;
+    flex: 0 1 100px;
+&#125;</code></pre>
+                </div>
+
+                <div class="flex-container mb-1 f-0-1-100">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                    <div class="flex-item item4"><p>4</p></div>
+                </div>
+
+                <br />
+
+                <p>
+                    Learn more about the properties of 'flex' below.
+                </p>
+
+                <div class="links mb-1">
+                    <a href="#fi-f-grow">Flex Grow</a>
+                    <a href="#fi-f-shrink">Flex Shrink</a>
+                    <a href="#fi-f-basis">Flex Basis</a>
+                </div>
+            </div>
+
+<hr />
+
+
+            <div class="flex-example mb-05">
+                <div id="fi-f-grow" class="h4">Flex Grow</div>
+                <p>
+                    In this example setting a value to 'flex-grow' will force the 'flex-items' to fill their 'flex-container'.
+                </p>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item&#123;
+    flex-grow: 1;
+&#125;</code></pre>
+                </div>
+
+                <div class="flex-container mb-1 f-grow og">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                </div>
+
+                <br />
+
+                <p>
+                    Increasing item2's flex-grow to 3 hasn't tripled it's size.
+                <br />
+                    Item2 instead has a size that equals 3/5's of it's container.
+                <br />
+                    It's container total 'flex-grow' size being a compination of all of the 'flex-grow' values added together.
+                <br />
+                    1 from item1, 3 from item2, and 1 from item3. (1 + 3 + 1 = 5)
+                </p>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item&#123;
+    flex-grow: 1;
+&#125;
+.flex-item.item2&#123;
+    flex-grow: 3;
+&#125;</code></pre>
+                </div>
+
+                <div class="flex-container mb-1 f-grow o">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                </div>
+
+                <br />
+
+                <p>
+                    As you can see it will be have the same result with similar relative values.
+                </p>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item&#123;
+    flex-grow: 9;
+&#125;
+.flex-item.item2&#123;
+    flex-grow: 27;
+&#125;</code></pre>
+                </div>
+
+                <div class="flex-container mb-1 f-grow alt">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                </div>
+
+                <br />
+
+                <p>
+                    In this example item2 takes up 4/5"s of it's container.
+                </p>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item&#123;
+    flex-grow: 1;
+&#125;
+.flex-item.item2&#123;
+    flex-grow: 4;
+&#125;</code></pre>
+                </div>
+
+                <div class="flex-container mb-1 f-grow alt2">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                </div>
+
+                <br />
+
+                <p>
+                    In this example only item 3 has been given a 'flex-grow' value which forces it to take up the remaining space in the container.
+                </p>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item.item3&#123;
+    flex-grow: 0;
+&#125;</code></pre>
+                </div>
+
+                <div class="flex-container mb-1 f-grow alt3">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                </div>
+
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item.item3&#123;
+    flex-grow: 1;
+&#125;</code></pre>
+                </div>
+
+                <div class="flex-container mb-1 f-grow alt3 f-grow-on">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                </div>
+            </div>
+
+<hr />
+
+            <div class="flex-example mb-05">
+                <div id="fi-f-shrink" class="h4">Flex Shrink</div>
+                <p>
+                    By setting 'flex-shrink' to '1' all flex-items decrease in size at the same rate.
+                </p>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item&#123;
+    flex-basis: 1000px;
+    flex-shrink: 1;
+&#125;</code></pre>
+                </div>
+
+                <div class="flex-container mb-1 f-shrink o">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                </div>
+
+                <br />
+
+                <p>
+                    By setting 'flex-shrink' to '0' no flex-items will decrease in size.
+                </p>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item&#123;
+    flex-basis: 200px;
+    flex-shrink: 0;
+&#125;</code></pre>
+                </div>
+
+                <div class="flex-container mb-1 f-shrink alt">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                </div>
+
+
+                <br />
+
+                <p>
+                    Adding a 'flex-grow' style will remove the whitespace from the container while the 'flex-shrink' still prevents the items from being below 200px;
+                </p>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item&#123;
+    flex-basis: 200px;
+    flex-shrink: 0;
+    flex-grow: 1;
+&#125;
+.flex-item.item3&#123;
+    flex-shrink: 3;
+&#125;</code></pre>
+                </div>
+
+                <div class="flex-container mb-1 f-shrink alt alt-half">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                </div>
+
+                <br />
+
+                <p>
+                    By setting item1's 'flex-shrink' to '1' and item2's 'flex-shrink' to '2', item2 will decrease in size faster than item1.
+                <br />
+                    However it is important to note, item2 will not be twice as small as item1.
+                </p>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-item&#123;
+    flex-basis: 500px;
+    flex-shrink: 1;
+&#125;
+.flex-item.item2&#123;
+    flex-shrink: 2;
+&#125;</code></pre>
+                </div>
+
+                <div class="flex-container mb-1 f-shrink alt2">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                </div>
+
+            </div>
+
+<hr />
+
+            <div class="flex-example mb-05">
+                <div id="fi-f-basis" class="h4">Flex Basis</div>
+                <p>
+                    Flex basis can either be the width of the 'flex-items', when the 'flex-container' is a 'row' or height of the 'flex-items', when the 'flex-container' is a 'column'.
+                </p>
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    flex-direction: row;
+&#125;
+.flex-item&#123;
+    flex-basis: 100px;
+&#125;</code></pre>
+                </div>
+
+                <div class="flex-container fd-row mb-1 f-basis o">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                </div>
+
+                <br />
+
+                <div class="code-block mb-1">
+<pre class="css"><code>.flex-container&#123;
+    flex-direction: column;
+&#125;
+.flex-item&#123;
+    flex-basis: 100px;
+&#125;</code></pre>
+                </div>
+
+                <div class="flex-container flex-cont-height-400 fd-column mb-1 f-basis o">
+                    <div class="flex-item item1"><p>1</p></div>
+                    <div class="flex-item item2"><p>2</p></div>
+                    <div class="flex-item item3"><p>3</p></div>
+                </div>
+
+                <br />
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
