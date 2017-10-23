@@ -76,7 +76,7 @@ body{
 .tile{
     width: 150px;
     height: 350px;
-    flex: 0 0 350px;
+    flex: 1 1 350px;
 
     margin: 5px;
     border-radius: 5px;
@@ -84,8 +84,8 @@ body{
     background: #BDBDBD;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
 }
-.type1{width: 100px; height: 300px; flex: 0 0 300px;}
-.type2{width: 300px; height: 200px; flex: 0 0 180px;}
-.type3{width: 240px; height: 350px; flex: 0 0 350px;}
-.type4{width: 200px; height: 200px; flex: 0 0 200px;}
-.type5{width: 400px; height: 250px; flex: 0 0 250px;}
+.type1{width: 100px; height: 300px; flex-basis: 300px;}
+.type2{width: 300px; height: 200px; flex-basis: 180px;}
+.type3{width: 240px; height: 350px; flex-basis: 350px;}
+.type4{width: 200px; height: 200px; flex-basis: 200px;}
+.type5{width: 400px; height: 250px; flex-basis: 250px;}
