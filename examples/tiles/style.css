@@ -51,6 +51,8 @@ body{
     display: block;
     width: 100%;
     transition: 0.1s ease-out;
+    text-decoration: none;
+    color: #333;
 }
 .side-item a.active{
     border-color: #03A9F4;

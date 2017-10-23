@@ -1,16 +1,22 @@
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+body{
+  background: #90A4AE;
+  margin: 0;
+  padding: 0;
+}
 
 nav{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  background: rgba(255, 255, 255, 0.5);
 }
 nav a{
   margin: 10px;
   color: #666;
   text-decoration: none;
-  border-bottom: 1px solid #52c9aa;
+  border-bottom: 1px solid #03A9F4;
   font-family: Raleway, sans-serif;
   transition: 0.1s ease-out;
 }
