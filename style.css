@@ -64,6 +64,11 @@ hr{
 .title {
     font-size: 84px;
 }
+@media (max-width: 767px){
+    .title{
+        font-size: 42px;
+    }
+}
 .links > a {
     color: #636b6f;
     padding: 0 25px;
@@ -77,6 +82,62 @@ hr{
 .links > a:hover{
     color: #414649;
 }
+
+.code-block{
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    width: 60%;
+}
+@media (max-width: 1200px){
+    .code-block{
+        width: 90%;
+    }
+}
+@media (max-width: 767px){
+    .code-block{
+        width: 100%
+    }
+}
+pre{
+    position: relative;
+    white-space: pre;
+    word-wrap: normal;
+    text-align: left;
+    margin: 0;
+}
+pre:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: .5em;
+    opacity: 1;
+    color: #fdf6e3;
+    line-height: 1.5;
+    cursor: default;
+    font-size: 1em;
+}
+pre code{
+    overflow: hidden;
+    display: block;
+    padding: 0 1em;
+    background: #657b83;
+    background-image: -webkit-linear-gradient(#5e737a 50%, transparent 50%);
+    background-image: linear-gradient(#5e737a 50%, transparent 50%);
+    background-size: 100% 3em;
+    background-position: 0 1.5em;
+    background-origin: content-box;
+    color: #fdf6e3;
+    line-height: 1.5;
+    font-size: 1em;
+}
+@media (max-width: 500px){
+    pre code{
+        overflow-x: scroll;
+    }
+}
+.css:before{ content: "CSS";  }
+.html:before{ content: "HTML"; }
 
 .flex-example{
     display: flex;
@@ -154,57 +215,6 @@ hr{
 .item8{background-color: #8BC34A;}
 
 .bg-red{background-color: red;}
-
-.code-block{
-    border-radius: 2px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
-    width: 60%;
-}
-@media (max-width: 1200px){
-    .code-block{
-        width: 90%;
-    }
-}
-@media (max-width: 767px){
-    .code-block{
-        width: 100%
-    }
-}
-pre{
-    position: relative;
-    white-space: pre;
-    word-wrap: normal;
-    text-align: left;
-    margin: 0;
-}
-pre:before{
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-right: .5em;
-    opacity: 1;
-    color: #fdf6e3;
-    line-height: 1.5;
-    cursor: default;
-    font-size: 1em;
-}
-pre code{
-    overflow-x: scroll;
-    display: block;
-    padding: 0 1em;
-    background: #657b83;
-    background-image: -webkit-linear-gradient(#5e737a 50%, transparent 50%);
-    background-image: linear-gradient(#5e737a 50%, transparent 50%);
-    background-size: 100% 3em;
-    background-position: 0 1.5em;
-    background-origin: content-box;
-    color: #fdf6e3;
-    line-height: 1.5;
-    font-size: 1em;
-}
-.css:before{ content: "CSS";  }
-.html:before{ content: "HTML"; }
 
 /* Flex Direction */
 .fd-row{
