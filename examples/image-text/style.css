@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    /*padding-top: 60px;*/
+    background: #FAFAFA;
+    font-family: sans-serif;
+}
+nav.nav{
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #111;
+    margin: 0;
+    padding-top: 4px;
+}
+.nav-item:first-of-type{
+    margin-left: 50px;
+}
+.nav-item:last-of-type{
+    margin-right: 50px;
+}
+.nav-link{
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 70px;
+    /*border-left: 1px solid #eee;*/
+    color: #eee;
+    text-decoration: none;
+}
+
+.container{
+    margin: 0 auto;
+    /*max-width: 800px;*/
+}
+.imgtxt{
+    display: flex;
+    flex-wrap: wrap;
+}
+.imgtxt .item{
+    flex: 1 0 500px;
+    min-height: 200px;
+}
+.imgtxt:first-of-type .item{
+    padding-top: 50px;
+}
+.img{
+    background-image: url('http://placehold.it/800x800');
+    background-position: center;
+    background-size: cover;
+}
+@media screen and (min-width: 1000px){
+    .imgtxt:nth-of-type(even) .img{
+        order: 1;
+    }
+}
+.txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #eee;
+    text-align: center;
+}
+.txt .inner{
+    padding: 50px;
+}
