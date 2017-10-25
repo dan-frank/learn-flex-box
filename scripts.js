@@ -63,3 +63,18 @@ $('#align-self-controller').on("click", function(){
     });
     flexWrapper.addClass(flexAdd);
 });
+
+$("input[name=order]").bind('keyup mouseup', function(){
+    var $this = $(this);
+
+    var flexWrapper = $('#order');
+    var item = $('#order .' + $this.attr('class'));
+    var orderVal = $this.val();
+
+    // if (orderVal !== 0) {
+    //     item.addClass('bg-red');
+    // } else {
+    //     item.removeClass('bg-red');
+    // }
+    item.css({ 'order' : orderVal });
+});
