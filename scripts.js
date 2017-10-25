@@ -52,3 +52,14 @@ $('#align-content-controller').on("click", function(){
     });
     flexWrapper.addClass(flexAdd);
 });
+
+$('#align-self-controller').on("click", function(){
+    var flexWrapper = $('#align-self .active');
+    var flexRemove = ["as-stretch", "as-flex-start", "as-flex-end", "as-center", "as-baseline", "as-auto"];
+    var flexAdd = $('input[name=align-self]:checked').val();
+
+    $.each(flexRemove, function(i, v){
+        flexWrapper.removeClass(v);
+    });
+    flexWrapper.addClass(flexAdd);
+});
