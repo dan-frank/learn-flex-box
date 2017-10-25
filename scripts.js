@@ -41,3 +41,14 @@ $('#align-items-controller').on("click", function(){
     });
     flexWrapper.addClass(flexAdd);
 });
+
+$('#align-content-controller').on("click", function(){
+    var flexWrapper = $('#align-content');
+    var flexRemove = ["ac-stretch", "ac-flex-start", "ac-flex-end", "ac-center", "ac-space-around", "ac-space-between"];
+    var flexAdd = $('input[name=align-content]:checked').val();
+
+    $.each(flexRemove, function(i, v){
+        flexWrapper.removeClass(v);
+    });
+    flexWrapper.addClass(flexAdd);
+});
