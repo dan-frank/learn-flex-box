@@ -69,12 +69,31 @@ $("input[name=order]").bind('keyup mouseup', function(){
 
     var flexWrapper = $('#order');
     var item = $('#order .' + $this.attr('class'));
-    var orderVal = $this.val();
+    var itemVal = $this.val();
 
-    // if (orderVal !== 0) {
-    //     item.addClass('bg-red');
-    // } else {
-    //     item.removeClass('bg-red');
-    // }
-    item.css({ 'order' : orderVal });
+    item.css({ 'order' : itemVal });
+});
+
+$('#flex-basis-controller').on("click", function(){
+    var flexWrapper = $('#flex-basis');
+    var flexRemove = ["fd-row", "fd-column"];
+    var flexAdd = $('input[name=flex-basis-direction]:checked').val();
+
+    $.each(flexRemove, function(i, v){
+        flexWrapper.removeClass(v);
+    });
+    flexWrapper.addClass(flexAdd);
+
+    console.log(flexWrapper);
+    console.log(flexRemove);
+    console.log(flexAdd);
+});
+$("input[name=flex-basis]").bind('keyup mouseup', function(){
+    var $this = $(this);
+
+    var flexWrapper = $('#flex-basis');
+    var item = $('#flex-basis .' + $this.attr('class'));
+    var itemVal = $this.val() + 'px';
+
+    item.css({ 'flex-basis' : itemVal });
 });
