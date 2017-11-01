@@ -411,6 +411,13 @@ pre code{
 #flex-basis-controller.controller input[type="number"]{
     width: 50px;
 }
+.interactive-fg-1 .flex-item{
+    flex-grow: 1;
+}
+.interactive-fs-1 .flex-item{
+    flex-shrink: 1;
+}
 .interactive-fb-100 .flex-item{
     flex-basis: 100px;
 }
+

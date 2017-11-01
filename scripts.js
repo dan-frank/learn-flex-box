@@ -74,6 +74,54 @@ $("input[name=order]").bind('keyup mouseup', function(){
     item.css({ 'order' : itemVal });
 });
 
+$('#flex-grow-controller').on("click", function(){
+    var flexWrapper = $('#flex-grow');
+    var flexRemove = ["fd-row", "fd-column"];
+    var flexAdd = $('input[name=flex-grow-direction]:checked').val();
+
+    $.each(flexRemove, function(i, v){
+        flexWrapper.removeClass(v);
+    });
+    flexWrapper.addClass(flexAdd);
+
+    console.log(flexWrapper);
+    console.log(flexRemove);
+    console.log(flexAdd);
+});
+$("input[name=flex-grow]").bind('keyup mouseup', function(){
+    var $this = $(this);
+
+    var flexWrapper = $('#flex-grow');
+    var item = $('#flex-grow .' + $this.attr('class'));
+    var itemVal = $this.val();
+
+    item.css({ 'flex-grow' : itemVal });
+});
+
+$('#flex-shrink-controller').on("click", function(){
+    var flexWrapper = $('#flex-shrink');
+    var flexRemove = ["fd-row", "fd-column"];
+    var flexAdd = $('input[name=flex-shrink-direction]:checked').val();
+
+    $.each(flexRemove, function(i, v){
+        flexWrapper.removeClass(v);
+    });
+    flexWrapper.addClass(flexAdd);
+
+    console.log(flexWrapper);
+    console.log(flexRemove);
+    console.log(flexAdd);
+});
+$("input[name=flex-shrink]").bind('keyup mouseup', function(){
+    var $this = $(this);
+
+    var flexWrapper = $('#flex-shrink');
+    var item = $('#flex-shrink .' + $this.attr('class'));
+    var itemVal = $this.val();
+
+    item.css({ 'flex-shrink' : itemVal });
+});
+
 $('#flex-basis-controller').on("click", function(){
     var flexWrapper = $('#flex-basis');
     var flexRemove = ["fd-row", "fd-column"];
